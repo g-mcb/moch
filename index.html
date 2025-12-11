@@ -9,24 +9,30 @@
     <link rel="icon" type="image/png" href="m.png">
 </head>
 <body>
-<h1>moch</h1>
-<p>what is moch?</p>
-<a>moch is a cozy project that plays your favorite object shows!</a>
-<div class="card">
-<img class="img" src="img/ii.webp">
-<h1>inanimate insanity</h1>
-<div class="play"><a href="ii.html">watch now!</a></div>
-</div>
-    
-<div class="card">
-<img class="img" src="img/md.webp">
-<h1>Murder Drones</h1>
-<div class="play"><a href="md.html">watch now!</a></div>
-</div>
-<script>
-    if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/service-worker.js');
-    }
-</script>
+    <h1>moch</h1>
+    <p>what is moch?</p>
+    <a>moch is a cozy project that plays your favorite object shows!</a>
+
+    <div class="cards">
+        <div class="card">
+            <img class="img" src="img/ii.webp" alt="Inanimate Insanity">
+            <h2>Inanimate Insanity</h2>
+            <div class="play"><a href="ii.html">watch now!</a></div>
+        </div>
+
+        <div class="card">
+            <img class="img" src="img/md.webp" alt="Murder Drones">
+            <h2>Murder Drones</h2>
+            <div class="play"><a href="md.html">watch now!</a></div>
+        </div>
+
+        <!-- Add more cards here -->
+    </div>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js');
+        }
+    </script>
 </body>
 </html>
